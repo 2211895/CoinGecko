@@ -1,0 +1,11 @@
+
+Número de grupo de projeto: TV_03
+
+Nome e número dos alunos:
+Diogo Gomes n2212638
+Gonçalo Neves n2211895
+Marian Matsuk n2211899
+
+1º ano: 4542 Curso Técnico Superior Profissional de Programação de Sistemas de Informação [D]
+
+GitHub: https://github.com/2211895/CoinGecko
