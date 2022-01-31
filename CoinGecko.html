@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>CoinMarketCap | HOME</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <style type="text/css"></style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <h1>TeSP - PSI - Programaçāo Web - Client</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  px-5"  id="navbarNav">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="btn btn-dark mx-auto d-block fas fa-home" href="CoinGecko.html"></a>
+                    </li>
+                    <li>
+                        <input type="text" id="myInput" onkeyup="searchCoin()" placeholder="Search for coins...">
+                    </li>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="ficha2-ex4.index.html">Home</a></li>
-                <li><a href="ficha2-ex4.teoricas.html">Teóricas</a></li>
-                <li><a href="ficha2-ex4.praticas.html">Práticas</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h2>Website de suporte à IC de PWC</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus. Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Erat pellentesque adipiscing commodo elit at imperdiet. Orci dapibus ultrices in iaculis nunc. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Volutpat odio facilisis mauris sit amet massa vitae. Tristique et egestas quis ipsum suspendisse ultrices gravida. Est placerat in egestas erat imperdiet sed euismod nisi porta. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Molestie at elementum eu facilisis sed odio morbi quis commodo. Amet nulla facilisi morbi tempus iaculis. Tempor nec feugiat nisl pretium. Risus pretium quam vulputate dignissim suspendisse. Lacus sed viverra tellus in. In massa tempor nec feugiat. Adipiscing elit duis tristique sollicitudin. Leo integer malesuada nunc vel risus commodo viverra maecenas.</p>
-            <p>Maecenas ultricies mi eget mauris pharetra. Duis at tellus at urna condimentum mattis. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. In aliquam sem fringilla ut morbi tincidunt augue interdum. Massa tincidunt dui ut ornare lectus. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Est velit egestas dui id. Lacus luctus accumsan tortor posuere. Risus nullam eget felis eget nunc. Dignissim sodales ut eu sem integer vitae justo eget magna. Congue quisque egestas diam in arcu cursus euismod quis.</p>
-        </main>
-        <aside>
-            <h3>Links úteis</h3>
-            <a href="#">Exemplo 1</a>
-            <a href="#">Exemplo 2</a>
-            <a href="#">Exemplo 3</a>
-        </aside>  
-        <footer>
-            <p class="small">PWC 2021/22</p>
-        </footer>
+        
+        <div class="tab-content">
+            <div class="tab-pane fade show active p-5" id ="tbMain">
+                <div class="filters my-3">
+                    <button id="favorites" class="btn btn-dark d-block" >Favorites</button>
+                    <button id="top10" onclick="changeText()" class="btn btn-dark d-block" >Top 10</button>
+                </div>
+                <table id="table-main" class="table table-striped justify-center">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">#</th>
+                            <th></th>
+                            <th scope="col" class="text-center">Coin</th>
+                            <th scope="col" class="text-center">Price</th>
+                            <th scope="col" class="text-center">Last 24h</th>
+                            <th scope="col" class="text-center">Market Cap</th>
+                            <th scope="col" class="text-center">Favorites</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src= "javascript/CoinGecko.js"></script>
     </body>
 </html>
